@@ -1,0 +1,111 @@
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Ensures cards wrap to a new line on smaller screens */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-card {
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    /* Adjust this for smaller screens if needed */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.pricing-card p {
+    text-align: left;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.pricing-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000;
+    text-align: left;
+}
+
+.pricing-card .price {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.pricing-card .description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 0;
+    flex-direction: column;
+    text-align: left;
+}
+
+.pricing-card ul li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.pricing-card button {
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 100px;
+    display: flex;
+}
+
+.pricing-card button {
+    background: #00cc99;
+    color: #fff;
+    border: none;
+}
+
+.pricing-card button:hover {
+    background: #009977;
+}
+
+.pricing-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 800px;
+    margin-top: 100px;
+}
+
+.pricing-text h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust styles for smaller screens */
+    .pricing-card {
+        width: 100%;
+        /* Make cards full width on smaller screens */
+    }
+
+    .pricing-text {
+        width: 100%;
+        max-width: 250px;
+        /* Make text section full width */
+    }
+}
